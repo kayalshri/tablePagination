@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Tablepagination : HTML Table Pagination (jQuery Plugin)" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Tablepagination</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/kayalshri/tablePagination">View on GitHub</a>
+
+          <h1 id="project_title">Tablepagination</h1>
+          <h2 id="project_tagline">HTML Table Pagination (jQuery Plugin)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/kayalshri/tablePagination/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/kayalshri/tablePagination/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="tablepagination" class="anchor" href="#tablepagination"><span class="octicon octicon-link"></span></a>tablePagination</h1>
+
+<p>HTML Table Pagination (jQuery Plugin)</p>
+
+<h1>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h1>
+
+<p>&lt;!-- jquery --&gt;<br>
+&lt;script src="<a href="http://code.jquery.com/jquery-1.11.0.min.js%22%3E">http://code.jquery.com/jquery-1.11.0.min.js"&gt;</a><br>
+&lt;script src="<a href="http://code.jquery.com/jquery-migrate-1.2.1.min.js%22%3E">http://code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;</a><br><br>
+&lt;link href="pagination.css" media="all" rel="stylesheet" type="text/css" /&gt;<br>
+&lt;script type="text/javascript" src="pagination.js"&gt;<br><br></p>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>&lt;script type="text/javaScript"&gt;<br><br>
+    $(document).ready(function(){<br><br>
+        $('#table-div-id').tablePaginate({navigateType:'full',recordPerPage:2});<br>
+    });<br>
+&lt;/script&gt;<br></p>
+
+<h1>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h1>
+
+<p>recordPerPage:20,           // Display records per page<br>
+pageNumber:1,               // GoTo Pagenumber - Default : 1<br>
+fullData:false,             // True : Disable pagination, False - Enable Pagination<br>
+buttonPosition:'before',        // before, after<br>
+navigateType:'navigator'        // navigator (first,prev,next,last buttons), full (display page numbers)<br><br></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Tablepagination maintained by <a href="https://github.com/kayalshri">kayalshri</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-38615761-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>

@@ -6,12 +6,12 @@ HTML Table Pagination (jQuery Plugin)
 
 Dependencies
 ============
-&lt;!-- jquery -->\n
-&lt;script src="http://code.jquery.com/jquery-1.11.0.min.js">\n
-&lt;script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">\n
-\n
-&lt;link href="pagination.css" media="all" rel="stylesheet" type="text/css" />\n
-&lt;script type="text/javascript" src="pagination.js">\n\n
+&lt;!-- jquery --><BR>
+&lt;script src="http://code.jquery.com/jquery-1.11.0.min.js"><BR>
+&lt;script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"><BR>
+<BR>
+&lt;link href="pagination.css" media="all" rel="stylesheet" type="text/css" /><BR>
+&lt;script type="text/javascript" src="pagination.js"><BR><BR>
 
 Usage
 =====

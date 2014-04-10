@@ -1,6 +1,6 @@
 /*
-Author 			: Giriraj Namachivayam
-DOC				: 05-April-2014
+Author 		: Giriraj Namachivayam
+DOC		: 05-April-2014
 Basic Usage 	: $('#table_div_id').tablePaginate();
 */
 

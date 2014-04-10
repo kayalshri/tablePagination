@@ -15,17 +15,17 @@ Dependencies
 
 Usage
 =====
-&lt;script type="text/javaScript">	
-	$(document).ready(function(){		
-		$('#table-div-id').tablePaginate({navigateType:'full',recordPerPage:2});
-	});
-&lt;/script>
+&lt;script type="text/javaScript"><BR>	
+	$(document).ready(function(){<BR>		
+		$('#table-div-id').tablePaginate({navigateType:'full',recordPerPage:2});<BR>
+	});<BR>
+&lt;/script><BR>
 
 Options
 =======
-recordPerPage:20,			// Display records per page
-pageNumber:1,				// GoTo Pagenumber - Default : 1
-fullData:false,				// True : Disable pagination, False - Enable Pagination
-buttonPosition:'before',		// before, after
-navigateType:'navigator'		// navigator (first,prev,next,last buttons), full (display page numbers)
+recordPerPage:20,			// Display records per page<BR>
+pageNumber:1,				// GoTo Pagenumber - Default : 1<BR>
+fullData:false,				// True : Disable pagination, False - Enable Pagination<BR>
+buttonPosition:'before',		// before, after<BR>
+navigateType:'navigator'		// navigator (first,prev,next,last buttons), full (display page numbers)<BR><BR>
 

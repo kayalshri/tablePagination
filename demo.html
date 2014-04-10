@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TablePagination Demo</title>
+
+    
+	<!-- jquery -->
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+
+	<link href="pagination.css" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="pagination.js"></script>
+    
+    
+		
+	<script type="text/javaScript">
+	
+		$(document).ready(function(){
+		
+			$.getJSON("PeriodicTableData.json", function(data){ 
+				var displayData ="<table class='table table-striped table-hover '>";
+				displayData += "<thead><tr class='warning'><th>Number</th><th>Name</th><th>Symbol</th><th>Atomic Wt.</th><th>M.P</th><th>B.P</th><th>Density</th><th>Earth Crust</th><th>Discovery</th><th>Electrons</th><th>eV</th></tr></thead><tbody>";
+				$.each(data, function(i,elements){ 					
+					//if(elements.number){
+					elements.IonizationEnergy = (elements.IonizationEnergy) ? elements.IonizationEnergy :"";
+					elements.ElectronConfiguration = (elements.ElectronConfiguration) ? elements.ElectronConfiguration :"";
+					elements.Discovery = (elements.Discovery) ? elements.Discovery :"";
+					elements.EarthCrust = (elements.EarthCrust) ? elements.EarthCrust :"";
+					elements.Density = (elements.Density) ? elements.Density :"";
+					elements.BoilingPoint = (elements.BoilingPoint) ? elements.BoilingPoint :"";
+					elements.MeltingPoint = (elements.MeltingPoint) ? elements.MeltingPoint :"";
+					if(!isNaN(elements.number)){
+						displayData += "<tr><td>"+elements.number+"</td><td><a target ='_blank' href='http://en.wikipedia.org/wiki/"+elements.name+"'>"+elements.name+"</a></td><td>"+elements.small+"</td><td  align='right'>"+elements.molar+"</td><td align='right'>"+elements.MeltingPoint+"</td><td  align='right'>"+elements.BoilingPoint+"</td><td  align='right'>"+elements.Density+"</td><td  align='right'>"+elements.EarthCrust+"</td><td  align='right'>"+elements.Discovery+"</td><td  align='left'>"+elements.ElectronConfiguration+"</td><td  align='right'>"+elements.IonizationEnergy+"</td></tr>"; 
+					}	
+					
+					//}
+				}); 
+				displayData +="</tbody></table>";
+				$('#table_data').html(displayData);	
+				
+				// Pagination Init
+				$('#table_data').tablePaginate({navigateType:'navigator'});
+			}); 
+		});
+	</script>
+	
+  </head>
+
+  <body >
+
+<h1>TablePagination </h1>
+<table width=100% border=1 id="table_data">
+</table>
+<div></div>
+  </body>
+</html>
